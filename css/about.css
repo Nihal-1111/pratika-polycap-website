@@ -1,0 +1,189 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+:root{
+  --main-color:#ff6600;
+  --dark-color:#cc5200;
+  --light-color:#fff3e6;
+}
+
+body{
+  background:#f9fafc;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  position:relative;
+  background:url('../images/eOIP (6).jpeg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+
+.hero-overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  top:0;
+  left:0;
+}
+
+.hero-content{
+  position:relative;
+  max-width:800px;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:15px;
+}
+
+.hero h1 span{
+  color:var(--main-color);
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:30px;
+}
+
+/* HERO FEATURES */
+.hero-features{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.feature{
+  background:rgba(255,255,255,0.1);
+  padding:15px 20px;
+  border-radius:10px;
+  backdrop-filter:blur(10px);
+}
+
+.feature h3{
+  color:var(--main-color);
+}
+
+.feature p{
+  font-size:14px;
+}
+
+/* SECTION */
+.section{
+  padding:70px 10%;
+}
+
+/* ABOUT */
+.about-container{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  flex-wrap:wrap;
+}
+
+.about-container img{
+  width:350px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-text h2{
+  font-size:32px;
+  margin-bottom:15px;
+  color:var(--main-color);
+}
+
+.about-text p{
+  margin-bottom:15px;
+  line-height:1.7;
+}
+
+/* SECTION TITLE */
+.section-title{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:40px;
+  position:relative;
+}
+
+.section-title::after{
+  content:"";
+  width:80px;
+  height:3px;
+  background:var(--main-color);
+  display:block;
+  margin:10px auto;
+}
+
+/* FEATURES */
+.features{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.feature-box{
+  width:260px;
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.feature-box:hover{
+  transform:translateY(-5px);
+  background:var(--main-color);
+  color:#fff;
+}
+
+.feature-box h3{
+  margin-bottom:10px;
+}
+
+/* MISSION */
+.mission-text{
+  max-width:700px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+  line-height:1.7;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:30px;
+  }
+
+  .about-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .about-container img{
+    width:100%;
+    max-width:300px;
+  }
+}
